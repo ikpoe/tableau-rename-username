@@ -12,7 +12,7 @@ import tableauserverclient as TSC
 def main():
   tableau_auth = TSC.TableauAuth('USERNAME', 'PASSWORD')
   server = TSC.Server('http://tableau-url.com')
-  original_user = "metabasetest"
+  original_user = "username"
   postfix = "@domain.com"
 
   with server.auth.sign_in(tableau_auth):
